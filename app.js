@@ -4,19 +4,27 @@ let amigos = [];
 const ingresoNombres = document.querySelector('#amigo');
 const listaAmigos = document.querySelector('#listaAmigos');
 
-function agregarAmigo(){
+function validacion(){
     if (ingresoNombres.value.trim() === ''){
         alert('Debes ingresar un nombre.');
         ingresoNombres.value = '';
-    } else{
-        amigos.push(ingresoNombres.value);
-        const liAmigo = document.createElement('li');
-        const nombreAmigo = document.createElement('p');
+    }
+}
 
-        nombreAmigo.innerHTML = ingresoNombres.value;
-        liAmigo.appendChild(nombreAmigo);
+function actualizarLista(){
+    amigos.push(ingresoNombres.value);
+    listaAmigos.innerHTML = ''
+    for (let amigo in amigos){
+        const liAmigo = document.createElement('li');
+        
+        liAmigo.innerHTML = amigos[amigo];
         listaAmigos.appendChild(liAmigo);
     }
+}
+
+function agregarAmigo(){
+    validacion();
+    actualizarLista()
     console.log(amigos)
     ingresoNombres.value = '';
 }

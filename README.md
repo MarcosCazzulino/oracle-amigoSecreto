@@ -2,6 +2,27 @@
 <p>Bienvenidos al juego del <b>Amigo Secreto</b>: un challenge propuesto por <b><a href="https://www.aluracursos.com/">Alura Latam</a></b> durante el programa One Next Education.</p>
 <p>Este juego consiste en ingresar distintos nombres (pueden ser tu grupo de amigos, tus compañeros de clases, familiares, etc.)
   para replicar la famosa dinámica de nuestras infancias para regalarnos cosas anónimamente.</p>
+
+<h2>Instalación</h2>
+<ol>
+  <li>
+    Ejecuta Git en tu computadora y accede a tu Escritorio con el comando <b>cd</b>.
+  </li>
+  <li>
+    Copia el link de este repositorio, y en Git escribe el comando <b>git clone (link repositorio)</b> sin los paréntesis.
+  </li>
+  <li>
+    Abre el proyecto clonado en tu Visual Studio Code.
+  </li>
+  <li>
+    Ejecuta el proyecto mediante Live Server (si no tienes la extensión, debes descargarla)
+  </li>
+  <li>
+    ¡Listo! Sentite libre de usarlo para organizar el juego con tus amigos
+  </li>
+</ol>
+
+<h2>Funcionamiento</h2>
 <ol>
   <li>
     <b>INGRESAR UN NOMBRE</b>
